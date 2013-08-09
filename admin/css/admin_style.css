@@ -1,0 +1,88 @@
+/* CSS Document */
+
+#catalog_type_input{
+  display:none;	
+}
+ .ui-draggable{
+   background:#55779C;	 
+ }
+ .mCSB_draggerRail , .mCSB_dragger_bar{
+  display:none; 
+ } 
+ 
+ .catalog_type_list .controls a.icon-ok{
+	 display:none;
+	 
+ }
+ .catalog_type_list-active{
+	background:#EDF1F5;
+	color:#FFF;
+ }
+ .catalog_type_list:hover{
+	 background:#829E18;
+	color:#FFF;
+ 
+ }
+ table td img{
+	 width:200px;
+	 height:120px;
+ }
+ 
+.modal.fade.in {
+    top: 35%;
+}
+.modal-header h3 {
+    margin: 0px;
+    line-height: 1px;
+	font-size:1em;
+}
+.wysi , .wysihtml5-editor{
+   
+}
+
+
+#image_popup_modal{
+  width:750px;
+  top: 50%;
+}
+
+#show_image_popup{
+   height:450px;
+  overflow:scroll;	
+	
+}
+.thumb200{
+  width: 100%;
+  height: 250px;	
+}
+#show_catalog_img img{
+  padding:.5em;	
+  width:100%;
+  height:250px;
+}
+.gallery img , .thumbnail img{
+   width:250px;
+   height:150px;
+  margin:1px;
+  
+}
+.thumbnail{
+  margin:5px;
+  padding:0em;
+   width:250px;
+   height:150px;	
+}
+
+.loading_bar{ display:none;}
+
+#list_select_img   img{
+    width:150px;
+    higth:100px;
+    
+}
+
+.table_img {
+    width:200px;
+    height:120px;
+    
+}
