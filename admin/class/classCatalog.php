@@ -25,7 +25,7 @@ class catalog extends database {
         $query = "select id from categories";
         $result = $this->getResult($query);
         $totalrow = mysql_num_rows($result);
-        $pagesize = 5;  // แสดงจำนวนกระทู้ในแต่ละหน้า ในที่นี้จะแสดง 20 กระทู้
+        $pagesize = 100;  // แสดงจำนวนกระทู้ในแต่ละหน้า ในที่นี้จะแสดง 20 กระทู้
         $totalpage = (int) ($totalrow / $pagesize);  // หาจำนวนหน้าทั้งหมด
         // ถ้าจำนวนหน้าเป็นเศษให้ปัดขึ้นไป
         if (($totalrow % $pagesize) != 0) {
@@ -54,8 +54,8 @@ class catalog extends database {
 				 FROM  categories
                                  JOIN categories_type
                                  ON categories_type.id = categories.catalog_type
-				 ORDER BY id DESC
-				 LIMIT $start,$pagesize ";
+				 ORDER BY id DESC "; 
+				
 
 
         $result = $this->getResult($query);
